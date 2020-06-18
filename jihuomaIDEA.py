@@ -18,7 +18,7 @@ def download_file(url, store_path):
     filename = url.split("/")[-1]
     filepath = os.path.join(store_path, filename)
     urlretrieve(url, filepath)
-    return url.split('/')[-1]
+    return filename
 
 
 def unzip(filename):
